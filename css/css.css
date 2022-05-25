@@ -184,6 +184,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 .btn-b {
 	border-right: 1px solid #005BC1;
@@ -199,6 +200,39 @@
 	width: 100%;
 	max-width: 540px;
 	height: auto;
+}
+.catalog__choice {
+	display: flex;
+	gap: 47px;
+	justify-content: center;
+	margin-top: 70px;
+}
+
+.choice__text {
+	font-family: "Oswald";
+	font-size: 24px;
+	letter-spacing: 5%;
+	line-height: 35.57px;
+	text-transform: uppercase;
+	color: #343434;
+	cursor: pointer;
+}
+.choice__text:nth-child(1) {
+	color: #005BC1;
+	border-bottom: 1px solid #005BC1;
+	
+}
+.catalog__bottom {
+	margin-top: 70px;
+}
+.products {
+	display: flex;
+	gap: 30px;
+}
+.product {
+	width: 100%;
+	height: auto;
+	max-width: 350px;
 }
 .footer {
 	grid-area: footer;
