@@ -24,6 +24,7 @@
 }
 .container {
 	max-width: 1110px;
+	
 	margin: auto;
 }
 .wrapper {
@@ -134,54 +135,55 @@
 	grid-area: main;
 }
 .slider {
-	margin-top: 351px;
+	margin-top: 150px;
+	margin-bottom: 150px;
 }
-.decor-heading {
-	display: flex;
-	flex-direction: column;
-	justify-items: flex-end;
-	gap: 13px;
-	margin-right: 40px;
-}
-.line:nth-child(1) {
-	background-color: #005BC1;
-	width: 100px;
-	height: 3px;
-}
-.line:nth-child(2) {
-	background-color: #005BC1;
-	width: 50px;
-	height: 3px;
-	margin-left: 50px;
+.title {
+	font-family: "Oswald";
+	font-size: 30px;
+	letter-spacing: 5%;
+	line-height: 44.46px;
+	color: #343434;
+	text-transform: uppercase;
 }
 .slider__top {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	margin-bottom: 65px;
 }
-.slider__title {
-	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
-	letter-spacing: 5%;
-	line-height: 44.46px;
-	color: rgba(52, 52, 52, 1);
+.slider__decor {
+	display: flex;
+	flex-direction: column;
+}
+.line:nth-child(1) {
+	width: 100px;
+	height: 3px;
+	background-color: #005BC1;
+}
+.line:nth-child(2) {
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 50px;
+	height: 3px;
+	background-color: #005BC1;
+}
+.title-container {
+	display: flex;
+	gap: 40px;
+	align-items: center;
 }
 .slider__btns {
 	display: flex;
-	margin-left: auto;
+	
 }
 .btn-b, .btn-n {
-	width: 52px;
-	height: 51px;
+	width: 55px;
+	height: 55px;
 	border: 2px solid #005BC1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	cursor: pointer;
-}
-.slider__bottom {
-	display: flex;
-	gap: 30px;
 }
 .btn-b {
 	border-right: 1px solid #005BC1;
@@ -189,41 +191,14 @@
 .btn-n {
 	border-left: 1px solid #005BC1;
 }
-.project-container {
-	position: relative;
+.projects {
+	display: flex;
+	gap: 30px;
 }
-.project-img {
-	
-	/* z-index: -1; */
-	
-	width: 540px;
+.project__img {
+	width: 100%;
+	max-width: 540px;
 	height: auto;
-}
-.text-container {
-	background-color: white;
-	position: absolute;
-	top: 255px;
-	left: 255px;
-	width: 250px;
-	height: 110px;
-}
-.project-title {
-	padding-top: 20px;
-	padding-bottom: 14px;
-	font-family: 'Oswald', sans-serif;
-	font-size: 18px;
-	line-height: 26.88px;
-	color: #343434;
-}
-.project-subtitle {
-	font-family: 'Open-Sans-Light', sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	color: #343434;
-}
-
-.project-title, .project-subtitle {
-	padding-left: 25px;
 }
 .footer {
 	grid-area: footer;
