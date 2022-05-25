@@ -5,7 +5,7 @@
 }
 @font-face {
 	font-family: "OpenSans-Light";
-	src: url(/fonts/OpenSans-Light.ttf);
+	src: url(../fonts/OpenSans-Light.ttf);
 	font-weight: 300;
 }
 @font-face {
@@ -301,7 +301,85 @@
 	line-height: 26.68px;
 	text-transform: uppercase;
 }
-
+.news {
+	margin-top: 108px;
+}
+.news__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.news__btn {
+	font-family: "OpenSans-SemiBold";
+	letter-spacing: 5%;
+	line-height: 21.79px;
+	background-color:#005BC1;
+	padding: 15px 34px 14px 34px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+.news__bottom {
+	margin-top: 77px;
+	display: flex;
+	gap: 60px;
+}
+.news__img {
+	max-width: 255px;
+	width: 100%;
+	height: auto;
+}
+.news__item {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+}
+.news__item:nth-child(2), .news__item:nth-child(3) {
+	flex-direction: column;
+	gap: 20px;
+}
+.news__text-container-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 42px;
+}
+.news__title {
+	font-family: "Oswald"; 
+	font-size: 18px; 
+	color: #343434;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.news__date {
+	color: #979797;
+	font-family: "OpenSans-SemiBold";
+	font-size: 14px;
+}
+.news__text {
+	margin-bottom: 21px;
+	font-family: "OpenSans-Light";
+	font-size: 14px;
+	color: #343434;
+	line-height: 19.07px;
+}
+.news__link {
+	font-family: "OpenSans-Regular";
+	color: #343434;
+	font-size: 14px;
+	line-height: 19.07px;
+}
+.news__item:nth-child(2) .news__img{
+	max-width: 128px;
+}
+.news__item:nth-child(3) .news__img{
+	max-width: 128px;
+}
+.img-container {
+	display: flex;
+	align-items: flex-end;
+	gap: 25px;
+}
 .footer {
 	grid-area: footer;
 }
